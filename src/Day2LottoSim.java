@@ -13,17 +13,25 @@
 import java.util.Random;
 
 public class Day2LottoSim {
-    public static void main(String[] args){
+    public static void main(String[] args) {
+        //initialize random class
         Random random = new Random();
-        //int rnum = random.nextInt(30);
+        //init empty int array of 5 elements
         int[] storedNumbers = new int[5];
 
-        for(int i = 0; i < 5;i++){
-            int rnum = random.nextInt(29)+1;
+        for (int i = 0; i < 5; i++) {
+            int rnum = random.nextInt(29) + 1; //29+1 prevents number zero possibility. 1 - 30.
             storedNumbers[i] = rnum;
             System.out.println(storedNumbers[i]);
+            /*
+            for (int j = 0; storedNumbers[i] != 0; j++) {
+
+                if(storedNumbers[i] != storedNumbers[j]){
+
+                }
+                //System.out.println("test");
+            }
+            */
         }
-
     }
-
 }
