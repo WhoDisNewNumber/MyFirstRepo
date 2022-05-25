@@ -19,8 +19,7 @@ public class Day2LottoSim {
         int[] storedNumbers = new int[5];
 
         for(int i = 0; i < 5;i++){
-            int rnum = random.nextInt(30);
-            //System.out.println(rnum);
+            int rnum = random.nextInt(29)+1;
             storedNumbers[i] = rnum;
             System.out.println(storedNumbers[i]);
         }
